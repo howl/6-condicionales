@@ -51,3 +51,17 @@ console.log(mayorDeDos(2, 8));
 console.log(mayorDeDos(5, 5));
 console.log(mayorDeDos(4, 20));
 console.log(mayorDeDos(1, -1));
+
+/**
+ * Devuelve true si el número es divisble entre 5 y false en caso contrario.
+ * @param {number} numero - Número a comprobar si es divisible.
+ * @returns {boolean}
+ */
+function esDivisiblePorCinco(numero) {
+  return numero % 5 ? 'false' : 'true';
+};
+
+console.log(esDivisiblePorCinco(25));
+console.log(esDivisiblePorCinco(12));
+console.log(esDivisiblePorCinco(9));
+console.log(esDivisiblePorCinco(50));
