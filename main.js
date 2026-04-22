@@ -65,3 +65,29 @@ console.log(esDivisiblePorCinco(25));
 console.log(esDivisiblePorCinco(12));
 console.log(esDivisiblePorCinco(9));
 console.log(esDivisiblePorCinco(50));
+
+/**
+ * Devuelve la clasificación de la nota que recibe.
+ * @param {number} nota - Nota a evaluar de 0 a 100.
+ * @returns {string} - La calificación.
+ */
+function clasificarNota(nota) {
+  if (typeof nota === 'number' && nota > 0 && nota <= 100) {
+    if (nota >= 90)
+      return 'Excelente';
+    else if (nota >= 70)
+      return 'Buena';
+    else if (nota > 50)
+      return 'Regular';
+    else
+      return 'Insuficiente';
+  } else
+    return 'Nota inválida';
+}
+
+console.log(clasificarNota(0));
+console.log(clasificarNota('Esto es un valor no válido para este parámetro'));
+console.log(clasificarNota(42));
+console.log(clasificarNota(65));
+console.log(clasificarNota(81));
+console.log(clasificarNota(97));
