@@ -33,3 +33,21 @@ console.log(puedeVotar(23));
 console.log(puedeVotar(5));
 console.log(puedeVotar(18));
 console.log(puedeVotar(56));
+
+/**
+ * Devuelve el mayor de dos números y si son iguales un mensajes indicándolo.
+ * @param {number} n1 - Primero número.
+ * @param {number} n2 - Segundo número.
+ * @returns {*} - El número mayor o el mensaje que indica si son iguales.
+ */
+function mayorDeDos(n1, n2) {
+  if (n1 === n2)
+    return 'Los dos números son iguales';
+  else
+    return n1 > n2 ? n1 : n2;
+}
+
+console.log(mayorDeDos(2, 8));
+console.log(mayorDeDos(5, 5));
+console.log(mayorDeDos(4, 20));
+console.log(mayorDeDos(1, -1));
